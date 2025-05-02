@@ -1,0 +1,7 @@
+echo "services:" > render.yaml
+echo "  - type: web" >> render.yaml
+echo "    name: abkdarrk-terminal-api" >> render.yaml
+echo "    env: python" >> render.yaml
+echo "    plan: free" >> render.yaml
+echo "    buildCommand: pip install -r requirements.txt" >> render.yaml
+echo "    startCommand: uvicorn main:app --host 0.0.0.0 --port 8000" >> render.yaml
